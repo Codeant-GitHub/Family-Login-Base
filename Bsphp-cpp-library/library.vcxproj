@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{03a87d79-b6bb-4199-bd0c-97158912f6ab}</ProjectGuid>
+    <RootNamespace>library</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <ProjectName>Bsphp-cpp-library</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4996;4267;4804;4477;4311;4302;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>D:\Program Files\VMProtect Ultimate\Include\C;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>D:\Program Files\VMProtect Ultimate\Lib\Windows;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AES.cpp" />
+    <ClCompile Include="AES_Base64.cpp" />
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="auth.cpp" />
+    <ClCompile Include="HttpClient.cpp" />
+    <ClCompile Include="MD5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AES.hpp" />
+    <ClInclude Include="AES_Base64.hpp" />
+    <ClInclude Include="auth.hpp" />
+    <ClInclude Include="Base64.hpp" />
+    <ClInclude Include="HttpClient.hpp" />
+    <ClInclude Include="MD5.hpp" />
+    <ClInclude Include="VMProtectSDK.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

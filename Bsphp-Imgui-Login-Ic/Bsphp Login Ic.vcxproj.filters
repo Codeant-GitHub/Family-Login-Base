@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{39dbd3a4-bda5-4317-a3ef-50064f12ff10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon">
+      <UniqueIdentifier>{a8f97088-9c57-4bf0-b056-698ab5adce3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stb_image">
+      <UniqueIdentifier>{ba04a21d-8dd1-4caf-afa6-c595031f5998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{0506e02e-489e-4df6-b55f-9760673c943a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json\json">
+      <UniqueIdentifier>{151fdd05-20e1-48b5-9809-6df87aa17b4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx9.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="icon\imguipp.cpp">
+      <Filter>icon</Filter>
+    </ClCompile>
+    <ClCompile Include="json\jsoncpp.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonHttp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx9.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="icon\imguipp.hpp">
+      <Filter>icon</Filter>
+    </ClInclude>
+    <ClInclude Include="auth.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image\stb_image.h">
+      <Filter>stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image\stb_image_resize.h">
+      <Filter>stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image\stb_image_write.h">
+      <Filter>stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>stb_image</Filter>
+    </ClInclude>
+    <ClInclude Include="VMProtectSDK.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json\json.h">
+      <Filter>json\json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json\json-forwards.h">
+      <Filter>json\json</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonHttp.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Bsphp-Imgui-Login-Ic.rc">
+      <Filter>stb_image</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\x64\IcoFx.ico">
+      <Filter>stb_image</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
